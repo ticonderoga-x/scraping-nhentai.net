@@ -22,7 +22,7 @@ for ($n = $start; $n <= $end; $n++)
 	if (!$bin)
 	{
 		$suffix = ($suffix == "jpg" ? "png" : "jpg");
-		$ufi = sprintf($uriTemplate, $gallery, $n, $suffix);
+		$uri = sprintf($uriTemplate, $gallery, $n, $suffix);
 		$bin = file_get_contents($uri);
 	}	
 	printf("%s\n", $uri);
